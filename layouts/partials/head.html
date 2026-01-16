@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{{ if .IsHome }}{{ .Site.Params.brand.name }} {{ .Site.Params.seo.titleSeparator }} {{ .Site.Params.brand.tagline }}{{ else }}{{ .Title }} {{ .Site.Params.seo.titleSeparator }} {{ .Site.Params.brand.name }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.seo.defaultDescription }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.seo.defaultDescription }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+<link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-600.woff2" as="font" type="font/woff2" crossorigin>
+
+{{/* Optimized: Local CSS, no CDN, <10KB */}}
+<link rel="stylesheet" href="/css/styles.css">

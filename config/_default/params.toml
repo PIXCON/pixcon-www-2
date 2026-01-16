@@ -1,0 +1,12 @@
+[brand]
+name = "PIXCON"
+tagline = "Tracking, das funktioniert"
+
+[seo]
+titleSeparator = "–"
+defaultDescription = "Server-Side Tracking in unter 2 Minuten. Ohne Coding. Adblocker-sicher."
+
+[links]
+app = "https://app.pixcon.io"
+register = "https://app.pixcon.io/register"
+login = "https://app.pixcon.io/login"

@@ -1,0 +1,29 @@
+{
+  "name": "pixcon-www-2",
+  "version": "1.0.0",
+  "description": "Pixcon Website - Hugo + Tailwind (optimized, <10KB CSS)",
+  "scripts": {
+  "css:dev": "tailwindcss -i ./assets/css/input.css -o ./static/css/styles.css --watch",
+  "css:build": "cross-env NODE_ENV=production tailwindcss -i ./assets/css/input.css -o ./static/css/styles.css --minify",
+  "css:check": "npm run css:build && node scripts/check-css-size.js",
+  "dev": "npm run css:build && hugo server -D",
+  "build": "npm run css:check && hugo --minify",
+  "start": "hugo server -D"
+},
+  "keywords": [
+    "hugo",
+    "tailwind",
+    "pixcon",
+    "performance"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "cross-env": "^10.1.0",
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.19"
+  }
+}

@@ -1,0 +1,311 @@
+{{ define "main" }}
+
+{{/* Hero */}}
+<section class="pt-32 pb-20 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <div class="inline-block bg-emerald-50 text-emerald-700 text-xs font-medium px-3 py-1 rounded-full mb-6">
+      Server-Side Tracking
+    </div>
+    <h1 class="text-4xl md:text-5xl font-semibold text-slate-900 leading-tight">
+      Tracking, das<br>
+      <span class="text-blue-600">wirklich funktioniert.</span>
+    </h1>
+    <p class="mt-6 text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">
+      Server-Side Tracking in unter 2 Minuten einrichten. Ohne eine Zeile Code. 
+      Adblocker-sicher. Endlich siehst du, welche Ads Umsatz bringen.
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="{{ .Site.Params.links.register }}" class="bg-blue-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        Kostenlos starten →
+      </a>
+      <a href="#how" class="text-slate-600 font-medium px-6 py-3 rounded-lg border border-slate-200 hover:border-slate-300 transition">
+        So funktioniert's
+      </a>
+    </div>
+    <div class="mt-10 flex justify-center gap-8 text-sm text-slate-500">
+      <span>✓ Setup in 2 Min</span>
+      <span>✓ DSGVO-konform</span>
+      <span>✓ Kein Code</span>
+    </div>
+  </div>
+</section>
+
+{{/* Problem */}}
+<section class="py-20 px-6 bg-slate-50">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-semibold text-slate-900 text-center mb-4">
+      Das Problem mit deinem Tracking
+    </h2>
+    <p class="text-slate-600 text-center mb-12 max-w-xl mx-auto">
+      30–50% deiner Conversion-Daten gehen verloren. Jeden Tag.
+    </p>
+    
+    <div class="space-y-6">
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-red-100 flex items-center justify-center flex-shrink-0">
+            <span class="text-red-600 text-lg">✕</span>
+          </div>
+          <div>
+            <h3 class="font-medium text-slate-900">Adblocker blockieren 30%+ deiner Besucher</h3>
+            <p class="text-slate-600 text-sm mt-1">Google Analytics, Meta Pixel – alles geblockt. Du siehst nur einen Bruchteil deiner echten Conversions.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center flex-shrink-0">
+            <span class="text-orange-600 text-lg">⏱</span>
+          </div>
+          <div>
+            <h3 class="font-medium text-slate-900">Safari löscht Cookies nach 24 Stunden</h3>
+            <p class="text-slate-600 text-sm mt-1">ITP macht Third-Party Cookies nutzlos. Attribution über mehrere Tage? Vergiss es.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-purple-100 flex items-center justify-center flex-shrink-0">
+            <span class="text-purple-600 text-lg">🤖</span>
+          </div>
+          <div>
+            <h3 class="font-medium text-slate-900">Bot Traffic verfälscht deine Daten</h3>
+            <p class="text-slate-600 text-sm mt-1">Bis zu 20% deiner "Klicks" sind Bots. Dein ROAS? Komplett falsch berechnet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Solution */}}
+<section id="features" class="py-20 px-6">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-semibold text-slate-900 text-center mb-4">
+      PIXCON löst das. Automatisch.
+    </h2>
+    <p class="text-slate-600 text-center mb-12 max-w-xl mx-auto">
+      Server-Side Tracking das funktioniert. Ohne Technik-Kopfschmerzen.
+    </p>
+    
+    <div class="space-y-6">
+      <div class="flex items-start gap-4 p-6 rounded-xl bg-emerald-50 border border-emerald-100">
+        <div class="w-10 h-10 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
+          <span class="text-white text-lg">✓</span>
+        </div>
+        <div>
+          <h3 class="font-medium text-slate-900">100% Adblocker-sicher</h3>
+          <p class="text-slate-600 text-sm mt-1">Daten laufen über deinen eigenen Server. Kein Blocker kann das stoppen.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start gap-4 p-6 rounded-xl bg-emerald-50 border border-emerald-100">
+        <div class="w-10 h-10 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
+          <span class="text-white text-lg">✓</span>
+        </div>
+        <div>
+          <h3 class="font-medium text-slate-900">First-Party Cookies ohne Limit</h3>
+          <p class="text-slate-600 text-sm mt-1">Keine 24h-Beschränkung. Attribution funktioniert wieder über Wochen.</p>
+        </div>
+      </div>
+      
+      <div class="flex items-start gap-4 p-6 rounded-xl bg-emerald-50 border border-emerald-100">
+        <div class="w-10 h-10 rounded-lg bg-emerald-600 flex items-center justify-center flex-shrink-0">
+          <span class="text-white text-lg">✓</span>
+        </div>
+        <div>
+          <h3 class="font-medium text-slate-900">Bot Traffic automatisch gefiltert</h3>
+          <p class="text-slate-600 text-sm mt-1">Nur echte User in deinen Daten. Plus Reports für Google Ads Refunds.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* How it works */}}
+<section id="how" class="py-20 px-6 bg-slate-50">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-semibold text-slate-900 text-center mb-12">
+      In 3 Schritten fertig
+    </h2>
+    
+    <div class="space-y-8">
+      <div class="flex gap-6">
+        <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-medium flex items-center justify-center flex-shrink-0">1</div>
+        <div>
+          <h3 class="font-medium text-slate-900">Shop verbinden</h3>
+          <p class="text-slate-600 text-sm mt-1">Shopify, WooCommerce, oder jede andere Website. Ein Klick.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-6">
+        <div class="w-8 h-8 rounded-full bg-blue-600 text-white text-sm font-medium flex items-center justify-center flex-shrink-0">2</div>
+        <div>
+          <h3 class="font-medium text-slate-900">Automatisch einrichten</h3>
+          <p class="text-slate-600 text-sm mt-1">PIXCON konfiguriert GTM Web- und Server-Container. In unter 2 Minuten.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-6">
+        <div class="w-8 h-8 rounded-full bg-emerald-600 text-white text-sm font-medium flex items-center justify-center flex-shrink-0">3</div>
+        <div>
+          <h3 class="font-medium text-slate-900">Ergebnisse sehen</h3>
+          <p class="text-slate-600 text-sm mt-1">Sofort mehr Conversions in Google Ads, Meta und TikTok.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Stats */}}
+<section class="py-20 px-6">
+  <div class="max-w-3xl mx-auto">
+    <div class="grid grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-3xl font-semibold text-blue-600">&lt;2 Min</div>
+        <div class="text-sm text-slate-500 mt-1">Setup-Zeit</div>
+      </div>
+      <div>
+        <div class="text-3xl font-semibold text-emerald-600">+40%</div>
+        <div class="text-sm text-slate-500 mt-1">Mehr Conversions</div>
+      </div>
+      <div>
+        <div class="text-3xl font-semibold text-blue-600">0</div>
+        <div class="text-sm text-slate-500 mt-1">Zeilen Code</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{/* Pricing */}}
+<section id="pricing" class="py-20 px-6 bg-slate-50">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-2xl font-semibold text-slate-900 text-center mb-4">
+      Einfache Preise
+    </h2>
+    <p class="text-slate-600 text-center mb-12">
+      Starte kostenlos. Upgrade wenn du wächst.
+    </p>
+    
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <div class="font-medium text-slate-900">Free</div>
+        <div class="mt-2">
+          <span class="text-3xl font-semibold">0€</span>
+          <span class="text-slate-500 text-sm">/Monat</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-sm text-slate-600">
+          <li>✓ 1.000 Events/Monat</li>
+          <li>✓ 1 Container</li>
+          <li>✓ Community Support</li>
+        </ul>
+        <a href="{{ .Site.Params.links.register }}" class="mt-6 block text-center py-2 rounded-lg border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 transition">
+          Kostenlos starten
+        </a>
+      </div>
+      
+      <div class="bg-blue-600 rounded-xl p-6 text-white">
+        <div class="flex items-center gap-2">
+          <span class="font-medium">Pro</span>
+          <span class="text-xs bg-blue-500 px-2 py-0.5 rounded">Beliebt</span>
+        </div>
+        <div class="mt-2">
+          <span class="text-3xl font-semibold">40€</span>
+          <span class="text-blue-200 text-sm">/Monat</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-sm text-blue-100">
+          <li>✓ 25.000 Events/Monat</li>
+          <li>✓ Adblocker Bypass</li>
+          <li>✓ Bot Traffic Filter</li>
+          <li>✓ Priority Support</li>
+        </ul>
+        <a href="{{ .Site.Params.links.register }}?plan=pro" class="mt-6 block text-center py-2 rounded-lg bg-white text-blue-600 font-medium hover:bg-blue-50 transition">
+          Plan wählen
+        </a>
+      </div>
+      
+      <div class="bg-white rounded-xl p-6 border border-slate-200">
+        <div class="font-medium text-slate-900">Business</div>
+        <div class="mt-2">
+          <span class="text-3xl font-semibold">120€</span>
+          <span class="text-slate-500 text-sm">/Monat</span>
+        </div>
+        <ul class="mt-6 space-y-3 text-sm text-slate-600">
+          <li>✓ 500.000 Events/Monat</li>
+          <li>✓ Multi-Container</li>
+          <li>✓ Cross-Device Tracking</li>
+          <li>✓ Account Manager</li>
+        </ul>
+        <a href="{{ .Site.Params.links.register }}?plan=business" class="mt-6 block text-center py-2 rounded-lg border border-slate-200 text-slate-700 font-medium hover:bg-slate-50 transition">
+          Plan wählen
+        </a>
+      </div>
+    </div>
+    
+    <p class="text-center text-sm text-slate-500 mt-8">
+      Monatlich kündbar · Keine Kreditkarte für Free · DSGVO-konform
+    </p>
+  </div>
+</section>
+
+{{/* FAQ */}}
+<section id="faq" class="py-20 px-6">
+  <div class="max-w-2xl mx-auto">
+    <h2 class="text-2xl font-semibold text-slate-900 text-center mb-12">
+      Häufige Fragen
+    </h2>
+    
+    <div class="space-y-4">
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer py-4 border-b border-slate-200">
+          <span class="font-medium text-slate-900">Wie lange dauert die Einrichtung?</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">↓</span>
+        </summary>
+        <p class="py-4 text-slate-600 text-sm">Unter 2 Minuten. PIXCON konfiguriert alles automatisch.</p>
+      </details>
+      
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer py-4 border-b border-slate-200">
+          <span class="font-medium text-slate-900">Muss ich programmieren können?</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">↓</span>
+        </summary>
+        <p class="py-4 text-slate-600 text-sm">Nein. Alles funktioniert per Klick. Kein Code nötig.</p>
+      </details>
+      
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer py-4 border-b border-slate-200">
+          <span class="font-medium text-slate-900">Ist PIXCON DSGVO-konform?</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">↓</span>
+        </summary>
+        <p class="py-4 text-slate-600 text-sm">Ja. Server in Deutschland, keine Weitergabe an Dritte.</p>
+      </details>
+      
+      <details class="group">
+        <summary class="flex justify-between items-center cursor-pointer py-4 border-b border-slate-200">
+          <span class="font-medium text-slate-900">Kann ich jederzeit kündigen?</span>
+          <span class="text-slate-400 group-open:rotate-180 transition">↓</span>
+        </summary>
+        <p class="py-4 text-slate-600 text-sm">Ja. Monatlich kündbar, keine Mindestlaufzeit.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+{{/* CTA */}}
+<section class="py-20 px-6 bg-slate-900">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="text-2xl font-semibold text-white">
+      Bereit für Tracking, das funktioniert?
+    </h2>
+    <p class="mt-4 text-slate-400">
+      Starte in unter 2 Minuten. Kostenlos.
+    </p>
+    <a href="{{ .Site.Params.links.register }}" class="mt-8 inline-block bg-white text-slate-900 font-medium px-8 py-3 rounded-lg hover:bg-slate-100 transition">
+      Kostenlos starten →
+    </a>
+  </div>
+</section>
+
+{{ end }}
